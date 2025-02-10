@@ -17,8 +17,9 @@ function App() {
         </div>
     </nav>
       <h1 className='text-danger'>hello from me </h1>
-      <AddArticle />
       <ArticleList />
+      <AddArticle />
+      
 
 
     </>
