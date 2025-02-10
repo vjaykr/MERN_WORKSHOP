@@ -5,7 +5,7 @@ function AddArticle(){
             <div  className="mb-3">
                 <input className="form-control" type="text" 
                 placeholder="Article Name"/>
-                
+                k
                 
             </div>
 
