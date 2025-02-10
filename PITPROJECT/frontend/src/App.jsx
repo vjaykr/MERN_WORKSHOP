@@ -10,6 +10,12 @@ function App() {
 
   return (
     <>
+
+    <nav className='navbar bg-light'>
+      <div className='container'>
+        <h4>arcticle list </h4>
+        </div>
+    </nav>
       <h1 className='text-danger'>hello from me </h1>
       <AddArticle />
       <ArticleList />
