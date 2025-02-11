@@ -12,7 +12,7 @@ This project is part of the MERN Workshop. It is a full-stack application built 
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/MERN_WORKSHOP.git
+    git clone https://github.com/vjaykr/MERN_WORKSHOP.git
     ```
 2. Navigate to the project directory:
     ```bash
