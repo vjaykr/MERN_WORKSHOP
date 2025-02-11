@@ -4,6 +4,11 @@ function AddArticle(){
 
     let [name,setName] = useState("vijay")
     let [body,setBody] = useState()
+
+
+    function addArticle(){
+        alert("hello")
+    }
     return (
         <form className='col-md-4 ms-auto me-auto'> 
         <h1 className="text-center">add a new article</h1>
@@ -18,7 +23,7 @@ function AddArticle(){
                 
                 <textarea className='form-control' placeholder="description"></textarea>
             </div>
-            <button className='btn btn-warning text-white w-100'>Add </button>
+            <button onClick={addArticle} type = "button" className='btn btn-warning text-white w-100'>Add </button>
         </form>
     )
 }
