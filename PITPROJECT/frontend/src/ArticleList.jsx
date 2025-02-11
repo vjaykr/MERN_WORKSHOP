@@ -1,31 +1,37 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 function ArticleList() {
+
+const [articles, setArticles] = useState([]);
+
+useEffect(() => {
+    const getArticles = async () => {
+        try {
+            let response = await axios.get("http://localhost:3001/");
+            setArticles(response.data);
+            console.log(response.data);
+        } catch (error) {
+            console.error("Error fetching articles:", error);
+        }
+    };
+    getArticles();
+}, []);
+
 return (
-    <div className="container">
-        <div className="row">
-            <div className="col-md-3 bg-white px-3 py-3 m-3" >
-                <h1>Article 1</h1>
-                <p>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <button className="btn btn-danger">View details</button>
+    <div className="row">
+        {articles && articles.map((article, index) => (
+            <div className="col-md-4" key={index}>
+                <div className="card">
+                    <div className="card-body">
+                        <h5 className="card-title">{article.name}</h5>
+                        <p className="card-text">{article.body}</p>
+                    </div>
+                </div>
             </div>
-            <div className="col-md-3 bg-white px-3 py-3 m-3" >
-                <h1>Article 2</h1>
-                <p>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <button className="btn btn-danger">View details</button>
-            </div>
-            <div className="col-md-3 bg-white px-3 py-3 m-3" >
-                <h1>Article 2</h1>
-                <p>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <button className="btn btn-danger">View details</button>
-            </div>
-        </div>
+        ))}
     </div>
-  )
+  );
 }
 
 export default ArticleList;

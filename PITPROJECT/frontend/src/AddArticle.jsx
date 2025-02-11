@@ -4,13 +4,15 @@ import axios from "axios";
 function AddArticle() {
     let [name, setName] = useState("hi there");
     let [body, setBody] = useState("i am vijay");
-    async function addArticle() 
-    {
-        let respoce = await axios.post("http://localhost:3001/addarticle", {
+
+    async function addArticle() {
+        await axios.post("http://localhost:3001/addarticle", {
             name,
             body,
         });
-    
+        // Reset the state to initial values
+        setName("");
+        setBody("");
     }
 
     return (
@@ -18,6 +20,7 @@ function AddArticle() {
             <h1 className="text-center">Add a new article</h1>
             <div className="mb-3">
                 <input
+                    value={name}
                     onChange={(e) => setName(e.target.value)}
                     className="form-control"
                     type="text"
@@ -27,6 +30,7 @@ function AddArticle() {
 
             <div className="mb-3">
                 <textarea
+                    value={body}
                     onChange={(e) => setBody(e.target.value)}
                     className="form-control"
                     placeholder="Description"
