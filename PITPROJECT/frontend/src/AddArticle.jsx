@@ -10,6 +10,7 @@ function AddArticle() {
             name,
             body,
         });
+        
         // Reset the state to initial values
         setName("");
         setBody("");
