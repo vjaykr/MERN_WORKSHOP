@@ -26,11 +26,19 @@ This project is part of the MERN Workshop. It is a full-stack application built 
     ```
 
 ## Usage
-1. Start the development server:
+1. To run the backend, navigate to the backend folder and run:
     ```bash
-    npm run dev
+    cd backend
+    nodemon app
     ```
-2. Open your browser and navigate to `http://localhost:3000`
+2. To run the frontend, navigate to the frontend folder and run:
+    ```bash
+    cd frontend
+    npm run dev
+    # or
+    vite --host
+    ```
+3. Open your browser and navigate to `http://localhost:3000`
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
