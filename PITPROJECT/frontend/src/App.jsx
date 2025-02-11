@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import AddArticle from './AddArticle'
 import ArticleList from './ArticleList'
-import Asus from './asus'
+
+import Navbar from './Navbar'
 
 function App() {
 
@@ -13,8 +14,8 @@ function App() {
         <h4>arcticle list </h4>
         </div>
     </nav>
-      <h1 className='text-danger'>hello from me </h1>
-      <Asus />
+      
+      <Navbar />
       <ArticleList />
       <AddArticle />
     </>

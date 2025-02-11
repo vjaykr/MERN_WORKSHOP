@@ -1,4 +1,9 @@
+import { useState } from "react"
+
 function AddArticle(){
+
+    let [name,setName] = useState("vijay")
+    let [body,setBody] = useState()
     return (
         <form className='col-md-4 ms-auto me-auto'> 
         <h1 className="text-center">add a new article</h1>
@@ -18,4 +23,4 @@ function AddArticle(){
     )
 }
 
-export default AddArticle
+export default AddArticle;
