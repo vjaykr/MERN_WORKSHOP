@@ -16,7 +16,7 @@ This project is part of the MERN Workshop. It is a full-stack application built 
     ```
 2. Navigate to the project directory:
     ```bash
-    cd MERN_WORKSHOP/PITPROJECT
+    cd MERN_WORKSHOP
     ```
 3. Install dependencies for both server and client:
     ```bash
@@ -38,7 +38,7 @@ This project is part of the MERN Workshop. It is a full-stack application built 
     # or
     vite --host
     ```
-3. Open your browser and navigate to `http://localhost:3000`
+3. Open your browser and navigate to `http://localhost:3001 `
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
@@ -47,4 +47,4 @@ Contributions are welcome! Please fork the repository and create a pull request 
 This project is licensed under the MIT License.
 
 ## Contact
-For any questions or feedback, please contact [your email].
+For any questions or feedback, please contact [babuengineer2@gmail.com].
