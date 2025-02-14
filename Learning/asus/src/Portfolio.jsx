@@ -27,7 +27,7 @@ function Portfolio() {
 
                     <section>
                         <h2>form tag</h2>
-                        <form align="center">
+                        <form style={{ textAlign: "center" }}>
                             <label htmlFor="name">Name:</label>
                             <input type="text" id="name" name="name" />
                             <br /><br />
@@ -45,6 +45,57 @@ function Portfolio() {
                 <footer>
                     <p>&copy; 2025 basic web development witout css </p>
                 </footer>
+
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-3">
+                            <div className="col-md-3 bg-white px-3 py-3 m-3 box" >
+                                <h1>Article 1</h1>
+                                <p>
+                                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <button className="btn btn-danger">View details</button>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div className="col-md-4 bg-white px-4 py-4 m-4 box" >
+                                <h1>Article 2</h1>
+                                <p>
+                                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <button className="btn btn-danger">View details</button>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div className="col-md-4 bg-white px-4 py-4 m-4 box" >
+                                <h1>Article 3</h1>
+                                <p>
+                                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <button className="btn btn-danger">View details</button>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div className="col-md-4 bg-white px-4 py-4 m-4 box" >
+                                <h1>Article 4</h1>
+                                <p>
+                                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <button className="btn btn-danger">View details</button>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div className="col-md-4 bg-white px-4 py-4 m-4 box" >
+                                <h1>Article 5</h1>
+                                <p>
+                                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <button className="btn btn-danger">View details</button>
+                            </div>
+                            </div>
+                        
+                    </div>
+                </div>
             </div>
         );
     }
