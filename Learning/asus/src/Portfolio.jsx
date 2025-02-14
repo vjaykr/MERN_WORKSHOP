@@ -39,10 +39,12 @@ function Portfolio() {
                             <button type="submit">Send</button>
                         </form>
                     </section>
-                    <section>
-
-                    </section>
+                    
                 </main>
+
+                <footer>
+                    <p>&copy; 2025 basic web development witout css </p>
+                </footer>
             </div>
         );
     }
