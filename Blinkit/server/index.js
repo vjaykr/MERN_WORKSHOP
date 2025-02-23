@@ -1,9 +1,9 @@
-import express from 'express';
-import cors from 'cors';
-import dotenv from 'dotenv';
-import cookieParser from 'cookie-parser';
-import morgan from 'morgan';
-import helmet from 'helmet';
+const express = require('express');
+const cors = require('cors');
+const dotenv = require('dotenv');
+const cookieParser = require('cookie-parser');
+const morgan = require('morgan');
+const helmet = require('helmet');
 dotenv.config();
 
 
@@ -25,6 +25,13 @@ app.use(helmet({
 
 const PORT = 8080 || process.env.PORT;
 
+app.get('/', (req, res) => {
+    //server to client side
+    res.json({message: "server is running :" + PORT });
+})
+
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-}
+})
